@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="s_array_edit_image">
+        <item>Gallery</item>
+        <item>Camera</item>
+        <item>Remove</item>
+        <item>Cancel</item>
+    </array>
+
+</resources>

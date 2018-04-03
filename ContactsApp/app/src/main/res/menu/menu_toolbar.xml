@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:mContext=".activity.ContactsActivity">
+
+    <item
+        android:id="@+id/action_timer"
+        android:title="@string/s_timer"
+        android:icon="@drawable/ic_access_time_black_24dp"
+        app:showAsAction="always" />
+</menu>

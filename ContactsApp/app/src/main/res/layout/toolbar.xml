@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@android:color/black"
+    android:id="@+id/toolbar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentInsetStart="@dimen/dp_0"
+    app:contentInsetEnd="@dimen/dp_0">
+<LinearLayout
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:weightSum="2"
+    android:id="@+id/ll_toolbar"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.75"
+        android:id="@+id/tv_toolbar"
+        android:textSize="@dimen/sp_18"
+        android:padding="@dimen/dp_8"
+        android:layout_marginStart="@dimen/dp_8"
+        android:textColor="@android:color/white"
+        />
+    <ImageView
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_weight="0.25"
+        android:id="@+id/iv_toolbar"
+        android:padding="@dimen/dp_8"
+        android:visibility="gone"
+        android:src="@drawable/ic_access_time_black_24dp"/>
+</LinearLayout>
+</android.support.v7.widget.Toolbar>

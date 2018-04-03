@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.contentproviderdemo.activity.EditActivity">
+
+    <include
+        android:id="@+id/include3"
+        layout="@layout/toolbar" />
+
+    <ImageView
+        android:id="@+id/iv_user_image"
+        android:layout_width="@dimen/d_image_size"
+        android:layout_height="@dimen/d_image_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/s_name"
+        android:textSize="@dimen/sp_18"
+        android:layout_marginStart="@dimen/dp_8"
+        app:layout_constraintBaseline_toBaselineOf="@+id/et_name"
+        app:layout_constraintBottom_toTopOf="@+id/tv_contact_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_contact_name"
+        app:layout_constraintTop_toBottomOf="@+id/iv_user_image" />
+
+    <TextView
+        android:id="@+id/tv_contact_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/s_contact_number"
+        android:textSize="@dimen/sp_18"
+        android:layout_marginStart="@dimen/dp_8"
+        app:layout_constraintBaseline_toBaselineOf="@+id/et_phone_number"
+        app:layout_constraintBottom_toTopOf="@+id/btn_save"
+        app:layout_constraintEnd_toStartOf="@+id/et_phone_number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@android:color/black"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/et_phone_number"
+        android:imeOptions="actionNext"
+        android:gravity="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_contact_name"
+        app:layout_constraintTop_toBottomOf="@+id/iv_user_image" />
+
+    <EditText
+        android:id="@+id/et_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:ems="10"
+        android:inputType="phone"
+        android:imeOptions="actionGo"
+        android:maxLength="10"
+        android:gravity="end"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_contact_name"
+        app:layout_constraintTop_toBottomOf="@+id/et_name" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_save_btn"
+        android:text="@string/s_save"
+        android:textSize="@dimen/sp_18"
+        android:paddingHorizontal="@dimen/dp_20"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/d_guideline_horizontal_edit" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="@dimen/d_guideline_edit_two" />
+
+
+</android.support.constraint.ConstraintLayout>

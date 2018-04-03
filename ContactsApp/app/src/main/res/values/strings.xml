@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ContentProviderDemo</string>
+    <string name="s_dummy_contact">XXXXXXXXX</string>
+    <string name="s_contacts">Contacts</string>
+    <string name="s_time_remain">Time Remaining : </string>
+    <string name="s_done">Done!</string>
+    <string name="s_timer">Timer</string>
+    <string name="s_count_down">Count Down Starts..</string>
+    <string name="s_save">Save</string>
+    <string name="s_name">Name</string>
+    <string name="s_contact_number">Contact Number</string>
+    <string name="s_change_picture">Change Contact Picture</string>
+    <string name="s_edit">Edit</string>
+</resources>
